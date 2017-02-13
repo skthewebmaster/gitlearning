@@ -1,0 +1,89 @@
+<!-- ================================================
+        ================= SIDEBAR Content ===================
+        ================================================= -->
+<aside id="sidebar">
+
+
+    <div id="sidebar-wrap">
+
+        <div class="panel-group slim-scroll" role="tablist">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#sidebarNav">
+                            Navigation <i class="fa fa-angle-up"></i>
+                        </a>
+                    </h4>
+                </div>
+                <div id="sidebarNav" class="panel-collapse collapse in" role="tabpanel">
+                    <div class="panel-body">
+
+
+                        <!-- ===================================================
+                        ================= NAVIGATION Content ===================
+                        ==================================================== -->
+                        <ul id="navigation">
+                            <li id = "adminSection0"><a href="index.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+
+                            <li id = "adminSection1">
+                                <a role="button" tabindex="0"><i class="fa fa-list"></i> <span>Notifications</span></a>
+                                <ul>
+                                    <li><a href="?cmd=applePushNotifications"><i class="fa fa-caret-right"></i> Apple Push Notifications</a></li>
+                                    <li><a href="?cmd=messagePopups"><i class="fa fa-caret-right"></i> Message Popup</a></li>
+                                    <li><a href="?cmd=animationPopups"><i class="fa fa-caret-right"></i> Animation Popup</a></li>
+                                </ul>
+                            </li>
+                            <li id = "adminSection2">
+                                <a role="button" tabindex="0"><i class="fa fa-user"></i> <span>Users</span></a>
+                                <ul>
+                                    <li><a href="?cmd=browseUsers"><i class="fa fa-caret-right"></i> Browse Users</a></li>
+                                </ul>
+                            </li>
+                            <li id = "adminSection3">
+                                <a role="button" tabindex="0"><i class="fa fa-pencil"></i> <span>Appointments</span></a>
+                                <ul>
+                                    <!--<li><a href="?cmd=requestBooking"><i class="fa fa-caret-right"></i> Request</a></li>-->
+                                    <li><a href="?cmd=browseAppointments"><i class="fa fa-caret-right"></i> Browse</a></li>
+                                </ul>
+                            </li>
+							<li id = "adminSection4">
+                                <a role="button" tabindex="0"><i class="fa fa-pencil"></i> <span>Salons</span></a>
+                                <ul>
+                                    <li><a href="?cmd=browseSalons"><i class="fa fa-caret-right"></i> Browse</a></li>
+                                    <li><a href="?cmd=dataMigration"><i class="fa fa-caret-right"></i> Data Migration</a></li>
+                                    <li><a href = "?cmd=adminImportSalons"><i class = "fa fa-caret-right"></i>Import from Spreadsheet</a></li>
+                                </ul>
+                            </li>
+                            <li id = "adminSection5">
+                                <a role="button" tabindex="0"><i class="fa fa-pencil"></i> <span>Custom Requests</span></a>
+                                <ul>
+                                    <li><a href="?cmd=browseCustomRequests"><i class="fa fa-caret-right"></i> Browse</a></li>\
+                                </ul>
+                            </li>
+                            <li id = "adminSection6">
+                                <a role="button" tabindex="0"><i class="fa fa-pencil"></i> <span>Referral Codes</span></a>
+                                <ul>
+                                    <li><a href="?cmd=browseReferralCodes"><i class="fa fa-caret-right"></i> Browse</a></li>\
+                                </ul>
+                            </li>
+							<li id = "adminSection7">
+                                <a role="button" tabindex="0"><i class="fa fa-pencil"></i> <span>Search Tags</span></a>
+                                <ul>
+                                    <li><a href="?cmd=browseSearchTags"><i class="fa fa-caret-right"></i> Browse </a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                        <!--/ NAVIGATION Content -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</aside>
+        <!--/ SIDEBAR Content -->

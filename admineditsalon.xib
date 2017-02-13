@@ -1,0 +1,633 @@
+<%adminhead%>
+
+
+
+
+<body id="minovate" class="appWrapper boxed-layout">
+
+
+
+
+
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ====================================================
+================= Application Content ===================
+===================================================== -->
+<div id="wrap" class="animsition">
+
+
+
+
+
+
+    <%adminheader%>
+
+
+
+
+
+    <!-- =================================================
+    ================= CONTROLS Content ===================
+    ================================================== -->
+    <div id="controls">
+
+
+
+
+
+        <%adminsidebar%>
+
+
+
+
+
+        <%adminrightbar%>
+
+
+
+
+    </div>
+    <!--/ CONTROLS Content -->
+
+
+
+
+    <!--
+    CONTENT GOES HERE
+    -->
+    <section id="content">
+
+        <div class="page page-boxed-layout">
+
+            <div class="pageheader">
+
+                <h2>Edit Salon </h2>
+
+                <div class="page-bar">
+
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <a href="index.html"><i class="fa fa-home"></i> TRU</a>
+                        </li>
+                        <li>
+                            <a href="#">Salons</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit Salon</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- tile -->
+            <section class="tile">
+
+                <!-- tile header -->
+                <div class="tile-header dvd dvd-btm">
+                    <h1 class="custom-font"><strong>Edit</strong> Salon</h1>
+                    <ul class="controls">
+                        
+                        <li class="dropdown">
+
+                            <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
+                                <i class="fa fa-cog"></i>
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </a>
+
+                            <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
+                                <li>
+                                    <a role="button" tabindex="0" class="tile-toggle">
+                                        <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
+                                        <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a role="button" tabindex="0" class="tile-refresh">
+                                        <i class="fa fa-refresh"></i> Refresh
+                                    </a>
+                                </li>
+                                <li>
+                                    <a role="button" tabindex="0" class="tile-fullscreen">
+                                        <i class="fa fa-expand"></i> Fullscreen
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+                    </ul>
+                </div>
+                <!-- /tile header -->
+
+				<div class="container-fluid p-15 bg-white mt-40" style="opacity: 0.9;">
+					<div class="section-body">
+						<div class="col-md-12 text-center mb-20"> 
+							<h4 class="text-success"><tb:field>msg</tb:field></h4>
+						</div>
+						<div class="form form-edit-salon">
+							<form name="signupForm" id="register-m-form" class="form-validation mt-20 " method="post"> 
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Name</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="name" class="form-control underline-input" ng-minlength="3" required="" style="" type="text" value="<tb:field>salonName</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Booking Url</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="bookingUrl" class="form-control underline-input" placeholder="" ng-minlength="3" required="" style="" type="url" value="<tb:field>bookingUrl</tb:field>">
+										<p class="help-block text-left">Please include a URL starting with http or https</p>
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Email Address</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="email" class="form-control underline-input" placeholder="" ng-minlength="3" required="" style="" type="email" value="<tb:field>email</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Address</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<textarea name="address" class="form-control underline-input" placeholder=""  rows="5" required=""><tb:field>address</tb:field></textarea>
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Phone Number</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="phone" class="form-control underline-input" placeholder="" ng-minlength="3" required="" style="" type="telephone" value="<tb:field>phone</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Contact Person</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="contactPerson" class="form-control underline-input" placeholder="" ng-minlength="3" required="" type="text" value="<tb:field>contactPerson</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Status</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<select class='form-control' name='status'><tb:field>status</tb:field></select>
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>City</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="city" class="form-control underline-input" placeholder="" ng-minlength="3" required="" type="text" value="<tb:field>city</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>State</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="state" class="form-control underline-input" placeholder="" ng-minlength="3" required="" type="text" value="<tb:field>state</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Zip</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="zip" class="form-control underline-input" placeholder="" ng-minlength="3" required="" type="text" value="<tb:field>zip</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Description</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<textarea name="description" class="form-control underline-input" placeholder="" rows="5" ><tb:field>description</tb:field></textarea>
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Website</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="website" class="form-control underline-input" placeholder="" ng-minlength="3" required="" type="url" value="<tb:field>website</tb:field>">
+										<p class="help-block text-left">Please include a URL starting with http or https</p>
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Neighborhood</label>
+									</div>
+									
+									<div class="col-md-6"> 
+										<select class='form-control' name='neighborhoodId[]' required multiple size="10" ><tb:field>neighborhoodoptions</tb:field></select>
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Hours</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="hours" class="form-control underline-input" placeholder="" ng-minlength="3" required="" type="text" value="<tb:field>hours</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Yelp</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="yelp" class="form-control underline-input" placeholder="" ng-minlength="3" required="" type="text" value="<tb:field>yelp</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Profile Spreadsheet</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="profileSpreadsheet" class="form-control underline-input" placeholder="" ng-minlength="3" required="" type="text" value="<tb:field>profileSpreadsheet</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Contact First Name</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="contactFirstName" class="form-control underline-input" placeholder="" ng-minlength="3" required="" type="text" value="<tb:field>contactFirstName</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Contact Last Name</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="contactLastName" class="form-control underline-input" placeholder="" ng-minlength="3" required="" type="text" value="<tb:field>contactLastName</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Longitude</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="longitude" class="form-control underline-input" placeholder="" ng-minlength="3" required="" type="text" value="<tb:field>longitude</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Latitude</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="latitude" class="form-control underline-input" placeholder="" ng-minlength="3" required="" type="text" value="<tb:field>latitude</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Future Booking Limit</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<input name="futureBookingLimit" class="form-control underline-input" placeholder="" ng-minlength="3" required="" type="text" value="<tb:field>futureBookingLimit</tb:field>">
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Same Day Booking</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<select class='form-control' name='sameDayBooking'><tb:field>sameDayBooking</tb:field></select>
+										
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Booking Software</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<select class='form-control' name='bookingSoftware'><tb:field>bookingSoftware</tb:field></select>
+									</div>								
+								</div>
+								
+								<div class="form-group text-center mt-20">
+									<input type="submit" class="btn btn-trugold b-0 br-2 mr-5" value="Update" name="submit">
+								</div>
+							</form>
+						</div><!-- /.form form-add-salon -->
+					</div><!-- /.section-body -->
+				</div>
+				
+			</section>
+			<!-- /tile -->
+
+
+
+        </div>
+
+    </section>
+    <!--
+    CONTENT ENDS HERE
+    -->
+
+
+
+
+
+
+</div>
+<!--/ Application Content -->
+
+<div class="modal splash fade" id="splash" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title custom-font" id = "salonModalTitle">Loading salon...</h3>
+            </div>
+            <div class="modal-body" id = "salonModalBody">
+                <form action="?cmd=processSalonImageUpload" class="dropzone"></form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default btn-border">Submit</button>
+                <button class="btn btn-default btn-border" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<%adminvendorjs%>
+
+
+
+
+<!-- ============================================
+============== Custom JavaScripts ===============
+============================================= -->
+<script src="assets/js/main.js"></script>
+<script src = "../vendor/dropzone/dropzone.js"></script>
+<!--/ custom javascripts -->
+
+
+
+
+
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+<script src="<tb:field>bookingJsUrl</tb:field>"></script>
+<script>
+    var socket = io('<tb:field>bookingUrl</tb:field>');
+    var adminSection = 4;
+    socket.on('getSalonDataError', function(msg){
+        console.log("getSalonDataError: ", msg);
+        var errorMessage = "";
+        for(var key in msg.errors){
+            var error = msg.errors[key];
+            errorMessage += error;
+        }
+        alert(errorMessage);
+    });
+
+    function updateExport(salonId){
+        console.log("updateExport(salonId = " + salonId + ")");
+        var isReady = $('#export_' + salonId).prop("checked");
+        $.post("/admin/?cmd=updateExport",{salonId:salonId, exportReady:isReady}, function(data, status){
+
+            alert(data.message);
+        });
+    }
+
+    function syncSalon(salonId){
+        console.log("Sync Salon #" + salonId);
+        $.get( "/?cmd=getSalon&salonId=" + salonId, function( data ) {
+            console.log("Response: ", data);
+            if(data.status == "success"){
+                var args = {};
+                args.bookingURL = data.salon.bookingUrl;
+                args.bookingSoftware = data.salon.bookingSoftware;
+                args.salonId = salonId;
+                args.remoteHost = "<tb:field>remoteHost</tb:field>";
+                socket.emit('getSalonData',args);
+                console.log("submitted getSalonData request (URL: " + args.bookingURL + ")");
+            }
+        });
+
+    }
+
+    function openSalonModal(salonId){
+        console.log("openSalonModal(" + salonId + ")");
+        window.location.href = "?cmd=viewSalon&salonId=" + salonId;
+    }
+    var sidebarSectionId = "#adminSection" + adminSection;
+    $(sidebarSectionId).addClass("active");
+    console.log("ready");
+</script>
+<script>
+    //initialize editable datatable
+
+    function restoreRow(oTable, nRow) {
+        var aData = oTable.row(nRow).data();
+        var jqTds = $('>td', nRow);
+
+        for (var i = 0, iLen = jqTds.length; i < iLen; i++) {
+            oTable.row(nRow).data(aData[i]);
+        }
+
+        oTable.draw();
+    }
+
+    function editRow(oTable, nRow) {
+        var aData = oTable.row(nRow).data();
+        var jqTds = $('>td', nRow);
+        jqTds[0].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[0] + '">';
+        jqTds[1].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[1] + '">';
+        jqTds[2].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[2] + '">';
+        jqTds[3].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[3] + '">';
+        jqTds[4].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[4] + '">';
+        jqTds[5].innerHTML = '<a role="button" tabindex="0" class="edit text-success text-uppercase text-strong text-sm mr-10">Save</a><a role="button" tabindex="0" class="cancel text-warning text-uppercase text-strong text-sm mr-10">Cancel</a>';
+    }
+
+    function saveRow(oTable, nRow) {
+        var jqInputs = $('input', nRow);
+        oTable.cell(nRow, 0).data(jqInputs[0].value);
+        oTable.cell(nRow, 1).data(jqInputs[1].value);
+        oTable.cell(nRow, 2).data(jqInputs[2].value);
+        oTable.cell(nRow, 3).data(jqInputs[3].value);
+        oTable.cell(nRow, 4).data(jqInputs[4].value);
+        oTable.cell(nRow, 5).data('<a role="button" tabindex="0" class="edit text-primary text-uppercase text-strong text-sm mr-10">Edit</a><a role="button" tabindex="0" class="delete text-danger text-uppercase text-strong text-sm mr-10">Remove</a>');
+        oTable.draw();
+    }
+
+    var table2 = $('#editable-usage');
+
+    var oTable = $('#editable-usage').DataTable({
+        "aoColumnDefs": [
+            { 'bSortable': false, 'aTargets': [ "no-sort" ] }
+        ]
+    });
+
+    var nEditing = null;
+    var nNew = false;
+
+    $('#add-entry').click(function (e) {
+        e.preventDefault();
+
+        if (nNew && nEditing) {
+            if (confirm("Previous row is not saved yet. Save it ?")) {
+                saveRow(oTable, nEditing); // save
+                $(nEditing).find("td:first").html("Untitled");
+                nEditing = null;
+                nNew = false;
+
+            } else {
+                oTable.row(nEditing).remove().draw(); // cancel
+                nEditing = null;
+                nNew = false;
+
+                return;
+            }
+        }
+
+        var aiNew = oTable.row.add(['', '', '', '', '', '', '']).draw();
+        var nRow = oTable.row(aiNew[0]).node();
+        editRow(oTable, nRow);
+        nEditing = nRow;
+        nNew = true;
+    });
+
+    table2.on('click', '.delete', function (e) {
+        e.preventDefault();
+
+        if (confirm("Are you sure?") == false) {
+            return;
+        }
+
+        var nRow = $(this).parents('tr')[0];
+        oTable.row(nRow).remove().draw();
+        alert("Deleted!");
+    });
+
+    table2.on('click', '.cancel', function (e) {
+        e.preventDefault();
+        if (nNew) {
+            oTable.row(nEditing).remove().draw();
+            nEditing = null;
+            nNew = false;
+        } else {
+            restoreRow(oTable, nEditing);
+            nEditing = null;
+        }
+    });
+
+    table2.on('click', '.edit', function (e) {
+        e.preventDefault();
+
+        /* Get the row as a parent of the link that was clicked on */
+        var nRow = $(this).parents('tr')[0];
+
+        if (nEditing !== null && nEditing != nRow) {
+            /* Currently editing - but not this row - restore the old before continuing to edit mode */
+            restoreRow(oTable, nEditing);
+            editRow(oTable, nRow);
+            nEditing = nRow;
+        } else if (nEditing == nRow && this.innerHTML == "Save") {
+            /* Editing this row and want to save it */
+            saveRow(oTable, nEditing);
+            nEditing = null;
+            alert("Updated!");
+        } else {
+            /* No edit in progress - let's start one */
+            editRow(oTable, nRow);
+            nEditing = nRow;
+        }
+    });
+    //*initialize editable datatable
+</script>
+</body>
+        </html>
