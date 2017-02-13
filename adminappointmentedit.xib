@@ -1,0 +1,284 @@
+<%adminhead%>
+
+
+
+
+<body id="minovate" class="appWrapper boxed-layout">
+
+
+
+
+
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ====================================================
+================= Application Content ===================
+===================================================== -->
+<div id="wrap" class="animsition">
+
+
+
+
+
+
+    <%adminheader%>
+
+
+
+
+
+    <!-- =================================================
+    ================= CONTROLS Content ===================
+    ================================================== -->
+    <div id="controls">
+
+
+
+
+
+        <%adminsidebar%>
+
+
+
+
+
+        <%adminrightbar%>
+
+
+
+
+    </div>
+    <!--/ CONTROLS Content -->
+
+
+
+
+    <!--
+    CONTENT GOES HERE
+    -->
+    <section id="content">
+
+        <div class="page page-boxed-layout">
+
+            <div class="pageheader">
+
+                <h2>Edit Appointment </h2>
+
+                <div class="page-bar">
+
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <a href="index.html"><i class="fa fa-home"></i> TRU</a>
+                        </li>
+                        <li>
+                            <a href="#">Appointments</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit Appointment</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- tile -->
+            <section class="tile">
+
+                <!-- tile header -->
+                <div class="tile-header dvd dvd-btm">
+                    <h1 class="custom-font"><strong>Edit</strong> Appointment</h1>
+                    <ul class="controls">
+                        
+                        <li class="dropdown">
+
+                            <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
+                                <i class="fa fa-cog"></i>
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </a>
+
+                            <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
+                                <li>
+                                    <a role="button" tabindex="0" class="tile-toggle">
+                                        <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
+                                        <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a role="button" tabindex="0" class="tile-refresh">
+                                        <i class="fa fa-refresh"></i> Refresh
+                                    </a>
+                                </li>
+                                <li>
+                                    <a role="button" tabindex="0" class="tile-fullscreen">
+                                        <i class="fa fa-expand"></i> Fullscreen
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+                    </ul>
+                </div>
+                <!-- /tile header -->
+				
+				<div class="container-fluid p-15 bg-white mt-40 text-center" style="opacity: 0.9;">
+					<div class="section-body">
+						<div class="col-md-12 text-center mb-20"> 
+							<h4 class="text-success"><tb:field>msg</tb:field></h4>
+						</div>
+						<div class="form form-add-salon">
+							<form name="signupForm" id="register-m-form" class="form-validation mt-20 " method="post"> 
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>User</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<tb:field>clientName</tb:field>
+									</div>								
+								</div>
+							
+								<div class="form-group row"> 
+									<div class="col-md-3 text-right"> 
+										<label>Salon</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<tb:field>salonName</tb:field>
+									</div>								
+								</div>
+							
+								<div class="form-group row"> 
+									<div class="col-md-3 text-right"> 
+										<label>Service</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<tb:field>serviceName</tb:field>
+									</div>								
+								</div>
+							
+								<div class="form-group row"> 
+									<div class="col-md-3 text-right"> 
+										<label>Appt Date</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<tb:field>apptDate</tb:field>
+									</div>								
+								</div>
+
+								<div class="form-group row"> 
+									<div class="col-md-3 text-right"> 
+										<label>Time</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<tb:field>apptTime</tb:field>
+									</div>								
+								</div>
+								
+								<div class="form-group row">
+									<div class="col-md-3 text-right"> 
+										<label>Status</label>
+									</div>
+									
+									<div class="col-md-9"> 
+										<select class='form-control' name='status'><tb:field>status</tb:field></select>
+									</div>								
+								</div>
+								
+								<div class="form-group text-center mt-20">
+									<input type="submit" class="btn btn-trugold b-0 br-2 mr-5" value="Update" name="submit">
+								</div>
+							</form>
+						</div><!-- /.form form-login -->
+					</div>
+				</div><!-- /.section-body -->
+				
+			</section>
+			<!-- /tile -->
+
+
+
+        </div>
+
+    </section>
+    <!--
+    CONTENT ENDS HERE
+    -->
+
+
+
+
+
+
+</div>
+<!--/ Application Content -->
+
+
+
+<%adminvendorjs%>
+
+
+
+
+<!-- ============================================
+============== Custom JavaScripts ===============
+============================================= -->
+<script src="assets/js/main.js"></script>
+<script src = "../vendor/dropzone/dropzone.js"></script>
+<!--/ custom javascripts -->
+
+
+
+
+
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+<script>
+	var adminSection = 3;
+    var sidebarSectionId = "#adminSection" + adminSection;
+    $(sidebarSectionId).addClass("active");
+    console.log("ready");
+	
+	$('#salonId').change(function(){
+		var salonId = $('#salonId').val();
+		//var Url = "http://hemkrishna.com/demo/TruBeauty/admin/?cmd=salonServicesOptions&salonId="+salonId;
+		var Url = "http://localhost/trubeauty/admin/?cmd=salonServicesOptions&salonId="+salonId;
+		$.ajax({
+		  url: Url,
+		}).done(function(data) {
+			$('#serviceId').html(data);
+		});
+	});
+	
+	
+</script>
+
+</body>
+</html>
